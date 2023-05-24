@@ -10,8 +10,8 @@ To set up the project locally, please follow the steps below:
 # Prerequisites
 Make sure you have the following software installed on your system:
 
-***Node.js***  
-***npm***  
+**Node.js**   
+**npm**  
 
 # Clone the Repository
 1. Open your terminal or command prompt.

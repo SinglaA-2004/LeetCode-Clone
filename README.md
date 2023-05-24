@@ -23,33 +23,33 @@ npm
   
 # Frontend Setup
 1. Change the current working directory to the cloned repository:  
-   **cd leetcode-clone**  
+   ***cd leetcode-clone***  
    
 2. Navigate to the client directory:  
-   **cd frontend**  
+   ***cd frontend***  
    
 3. Install the required dependencies by running the following command:  
-   **npm install**  
+   ***npm install***  
   
 # Backend Setup
 1. Change the current working directory to the cloned repository:  
-   **cd leetcode-clone** 
+   ***cd leetcode-clone*** 
    
 2. Navigate to the client directory:  
-   **cd server**  
+   ***cd server***  
    
 3. Install the required dependencies by running the following command:  
-   **npm install**  
+   ***npm install***  
   
   
 # Start the application
 1. Start the frontend development server by running this command in the client directory:  
-   **npm run dev**
+   ***npm run dev***
    
    This command will start the frontend application and open it in your default browser.  
 
 2. Start the backend development server  by running this command in the server directory:  
-   **npm run start** 
+   ***npm run start*** 
    
    This command will start the backend server and make it accessible for frontend requests.  
 

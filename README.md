@@ -22,10 +22,10 @@ npm
   
   
 # Frontend Setup
-1. Change the current working directory to the cloned repository: 
+1. Change the current working directory to the cloned repository:  
    **cd leetcode-clone**  
    
-2. Navigate to the client directory:
+2. Navigate to the client directory:  
    **cd frontend**  
    
 3. Install the required dependencies by running the following command:  

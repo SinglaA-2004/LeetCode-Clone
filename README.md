@@ -16,8 +16,8 @@ Make sure you have the following software installed on your system:
 # Clone the Repository
 1. Open your terminal or command prompt.
 2. Change the current working directory to the location where you want to clone the repository.
-3. Run the following command to clone the repository:
-   git clone <repository-url>
+3. Run the following command to clone the repository:  
+   ***git clone {repository-url}***  
 
   
   

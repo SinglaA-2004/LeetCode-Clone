@@ -11,7 +11,7 @@ let urlencodedParser = bodyParser.urlencoded({extended : false});
 const cors = require('cors');
 app.use(cors());
 app.use(jsonParser);
-
+app.use(urlencodedParser);
 const USERS =[];
 const SUBMISSIONS =[];
 const PROBLEMS = [
@@ -128,10 +128,10 @@ app.post('/signup', (req, res) => {
         return res.status(403).json({msg: "Email are already in use."});
     }
     USERS.push({
-        name,
-        username,
-        email,
-        password,
+        name: name,
+        username: username,
+        email: email,
+        password: password,
         id : USER_ID_COUNTER++
     })
     return res.json({msg: "User created successfully."})
@@ -164,7 +164,7 @@ app.post('/submission', auth, (req, res) => {
     const submission = req.body.submission;
     if(isCorrect){
         SUBMISSIONS.push({
-            submission,
+            submission: submission,
             problemId: problemId,
             userId: req.userId,
             status: 'AC'
@@ -175,7 +175,7 @@ app.post('/submission', auth, (req, res) => {
     }
     else {
         SUBMISSIONS.push({
-            submission,
+            submission: submission,
             problemId: problemId,
             userId: req.userId,
             status: 'WA'
@@ -202,6 +202,6 @@ app.get('/me', auth, (req, res) => {
         id : user.id
     }
     res.json({
-        filteredUser,
+        filteredUser
     })
 })

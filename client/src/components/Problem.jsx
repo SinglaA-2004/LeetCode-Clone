@@ -82,15 +82,15 @@ function Problem() {
                                 const response = await fetch('http://localhost:3000/submission', {
                                     method: 'POST',
                                     headers: {
+                                        "Content-Type": "application/json",
                                         "authorization": localStorage.getItem('token')
                                     },
                                     body: JSON.stringify({
-                                        problemId: probId,
-                                        submission: submission
+                                        problemId : probId,
+                                        submission : submission
                                     })
                                 })
                                 const json = await response.json();
-                                console.log(json);
                             }
                         }>Submit</button>
                     </div>
